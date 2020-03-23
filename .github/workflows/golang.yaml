@@ -31,7 +31,7 @@ jobs:
         fi
 
     - name: Tests
-      run: touch .env && go test
-      
+      run: touch .env && go test entity/*
+
     - name: Build
       run: go build -v .
